@@ -1,6 +1,6 @@
 const but = document.querySelector('#submit');
 	let vol = document.querySelector('#volume').value;
-but.addEventListener('click', volume_sphere) 
+// but.addEventListener('click', volume_sphere) 
 function volume_sphere() {
     //Write your code here
 	const radius = document.querySelector('#radius').value;
@@ -8,7 +8,7 @@ function volume_sphere() {
 	let result = 4/3 * (3.141) * (Math.pow(radius, 3));
 	// alert(result);
 	vol= result;
-	// console.log(vol);
+	console.log(vol);
 } 
 
-// document.getElementById('MyForm').onsubmit = volume_sphere();
+document.getElementById('MyForm').onsubmit = volume_sphere;
