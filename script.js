@@ -5,10 +5,10 @@ function volume_sphere() {
     //Write your code here
 	const radius = document.querySelector('#radius').value;
 	// vol.disabled = true;
-	let result = 4/3 * (3.141) * (Math.pow(radius, 3));
+	// let result = 4/3 * (3.141) * (Math.pow(radius, 3));
 	// alert(result);
-	vol= result;
-	console.log(vol);
+	vol= 4/3 * (3.141) * (Math.pow(radius, 3));
+	// console.log(vol);
 } 
 
-document.getElementById('MyForm').onsubmit = volume_sphere;
+window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
